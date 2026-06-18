@@ -36,9 +36,9 @@ bool UMySQLFunctionLibrary::Query(FString query)
 	return true;
 }
 
-bool UMySQLFunctionLibrary::QueryFormRowValueHas(FString form, FString rowname, FString value)
+bool UMySQLFunctionLibrary::QueryFormRowValueHas(FString formname, FString rowname, FString value)
 {
-	FString query = FString::Printf(TEXT("SELECT COUNT(*) FROM %s WHERE %s = '%s'"), *form, *rowname, *value);
+	FString query = FString::Printf(TEXT("SELECT COUNT(*) FROM %s WHERE %s = '%s'"), *formname, *rowname, *value);
 	if (!Query(query)) return false;
 	if (result == nullptr) return false;
 
