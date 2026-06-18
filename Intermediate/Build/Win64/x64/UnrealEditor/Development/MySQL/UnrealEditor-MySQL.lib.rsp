@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-MySQL.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:/UEProject/MyPlugins/Intermediate/Build/Win64/x64/MyPluginsEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"D:/UEProject/MyPlugins/Plugins/MySQL/Intermediate/Build/Win64/x64/UnrealEditor/Development/MySQL/Module.MySQL.cpp.obj"
+"D:/UEProject/MyPlugins/Plugins/MySQL/Intermediate/Build/Win64/x64/UnrealEditor/Development/MySQL/MySQL.cpp.obj"
+"D:/UEProject/MyPlugins/Plugins/MySQL/Intermediate/Build/Win64/x64/UnrealEditor/Development/MySQL/MySQLFunctionLibrary.cpp.obj"
+"D:/UEProject/MyPlugins/Plugins/MySQL/Intermediate/Build/Win64/x64/UnrealEditor/Development/MySQL/Default.rc2.res"
+/OUT:"D:/UEProject/MyPlugins/Plugins/MySQL/Intermediate/Build/Win64/x64/UnrealEditor/Development/MySQL/UnrealEditor-MySQL.lib"
