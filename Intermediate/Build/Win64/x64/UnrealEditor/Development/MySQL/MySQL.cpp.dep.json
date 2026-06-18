@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ueproject\\myplugins\\plugins\\mysql\\source\\mysql\\private\\mysql.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ueproject\\myplugins\\intermediate\\build\\win64\\x64\\mypluginseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\ueproject\\myplugins\\plugins\\mysql\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mysql\\definitions.mysql.h",
+            "d:\\ueproject\\myplugins\\plugins\\mysql\\source\\mysql\\public\\mysql.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

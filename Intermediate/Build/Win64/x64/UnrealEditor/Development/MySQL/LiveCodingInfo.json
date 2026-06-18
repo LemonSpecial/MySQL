@@ -1,0 +1,12 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MySQL.cpp.obj": [
+			"MySQL.init.gen.cpp.obj",
+			"MySQLFunctionLibrary.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"MySQL.cpp.obj",
+			"MySQLFunctionLibrary.cpp.obj"
+		]
+	}
+}

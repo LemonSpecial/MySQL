@@ -36,6 +36,19 @@ bool UMySQLFunctionLibrary::Query(FString query)
 	return true;
 }
 
+bool UMySQLFunctionLibrary::QueryFormRowValueHas(FString form, FString rowname, FString value)
+{
+	FString query = FString::Printf(TEXT("SELECT COUNT(*) FROM %s WHERE %s = '%s'"), *form, *rowname, *value);
+	if (!Query(query)) return false;
+	if (result == nullptr) return false;
+
+	MYSQL_ROW row = mysql_fetch_row(result);
+	if (row == nullptr) return false;
+
+	int32 count = FCString::Atoi(UTF8_TO_TCHAR(row[0]));
+	return count > 0;
+}
+
 void UMySQLFunctionLibrary::Close()
 {
 	if (result != nullptr) mysql_free_result(result);

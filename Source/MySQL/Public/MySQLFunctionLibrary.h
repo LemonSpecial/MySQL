@@ -18,6 +18,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MySQL|MySQL")
 	static bool Query(FString query);
 	
+	UFUNCTION(BlueprintCallable, Category = "MySQL|QueryMySQL")
+	static bool QueryFormRowValueHas(FString form,FString rowname,FString value);
+	
 	UFUNCTION(BlueprintCallable, Category = "MySQL|MySQL")
 	static void Close();
 };
